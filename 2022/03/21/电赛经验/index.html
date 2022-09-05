@@ -31,7 +31,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://private.codecogs.com/gif.latex?100V/%5Cmu%20s">
 <meta property="article:published_time" content="2022-03-21T09:23:07.000Z">
-<meta property="article:modified_time" content="2022-03-27T04:54:28.000Z">
+<meta property="article:modified_time" content="2022-09-05T02:35:29.204Z">
 <meta property="article:author" content="Jialin Liu">
 <meta property="article:tag" content="电赛">
 <meta name="twitter:card" content="summary">
@@ -234,7 +234,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-27 12:54:28" itemprop="dateModified" datetime="2022-03-27T12:54:28+08:00">2022-03-27</time>
+                <time title="修改时间：2022-09-05 10:35:29" itemprop="dateModified" datetime="2022-09-05T10:35:29+08:00">2022-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -328,11 +328,6 @@
 <li><p>可能是反馈过深引起的    —————————–可通过减少环路增益，减少反馈量，即增大闭环增益。例如运放作为电压跟随易震荡，增大放大倍数，震荡会消失。</p>
 </li>
 </ol>
-<p>ps：</p>
-<pre><code> 1.电源供电稳定，最好并联0.1uf ,10uf等电容
-
- 2.放大倍数不能过大，放大级数也不要超过四级
-</code></pre>
 <p>5.为了消除内阻引起的寄生振荡，可在运放电源端对地就近接去耦电容，考虑到去耦电解电容的电感效应，常常在其二端并联一个容量为0.01uf~0.1uf的瓷片电容。</p>
 <h2 id="消除自激振荡的方法："><a href="#消除自激振荡的方法：" class="headerlink" title="消除自激振荡的方法："></a>消除自激振荡的方法：</h2><p>目测或者审查电路，观察是否有明显的违规现象。<br>尝试更换运算放大器。比如使用驱动电容能力较强的运放。<br>如断掉负载，自激振荡消失，可考虑在负载和运放输出之间串联一个小电阻，先从 100 欧姆试起，如振荡消失，一次改为 22欧姆。最终找到合适的隔离电阻。<br>在反馈电阻中并联一个小电容，是消振最为常见的做法。<br>重新设计电路板，将杂散电容大幅度降低。<br>尝试其他补偿方法，比如教科书中介绍的超前补偿、滞后补偿等等，都是在外部增加电容，强制改变闭环传函的零极点位置，以消除自激振荡的条件。一般情况下， 用前述 5 条即可解决问题。</p>
 <h2 id="改变阻抗力的方法："><a href="#改变阻抗力的方法：" class="headerlink" title="改变阻抗力的方法："></a><strong>改变阻抗力的方法：</strong></h2><p>　<br>  使用变压器来做阻抗转换。<br>  使用串联/并联电容或电感的办法，这在调试射频电路时常使用。<br>使用串联/并联电阻的办法。</p>
@@ -353,11 +348,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/" rel="prev" title="雷达基础">
-      <i class="fa fa-chevron-left"></i> 雷达基础
-    </a></div>
       <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/" rel="next" title="雷达基础">
+      雷达基础 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
