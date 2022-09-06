@@ -22,16 +22,20 @@
     var CONFIG = {"hostname":"xdljl.club","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="FWCW雷达FMCW 雷达与脉冲雷达的不同之处在于 FMCW 雷达的电磁信号是连续传输该信号的频率随时间变化，并且通常在设定的带宽上扫描。发射和接收（反射）信号之间的频率差由这两个信号同时确定并产生一个新的信号，通过测量该信号可以确定目标的距离或速度。   卡尔曼滤波（Kalman filtering）是一种利用线性系统状态方程，通过系统输入输出观测数据，对系统状态进行最优估计的算法。由于观测数据">
+  <meta name="description" content="FWCW雷达FMCW 雷达与脉冲雷达的不同之处在于 FMCW 雷达的电磁信号是连续传输该信号的频率随时间变化，并且通常在设定的带宽上扫描。发射和接收（反射）信号之间的频率差由这两个信号同时确定并产生一个新的信号，通过测量该信号可以确定目标的距离或速度。   在多个物体检测时，距离维FFT如下图：   检测物体速度时，发出两组线性调频脉冲，由于间隔时间极短，因此频率几乎相同，但相位不同：  由于这种">
 <meta property="og:type" content="article">
 <meta property="og:title" content="雷达基础">
 <meta property="og:url" content="http://xdljl.club/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/index.html">
 <meta property="og:site_name" content="Joy Boy的小屋">
-<meta property="og:description" content="FWCW雷达FMCW 雷达与脉冲雷达的不同之处在于 FMCW 雷达的电磁信号是连续传输该信号的频率随时间变化，并且通常在设定的带宽上扫描。发射和接收（反射）信号之间的频率差由这两个信号同时确定并产生一个新的信号，通过测量该信号可以确定目标的距离或速度。   卡尔曼滤波（Kalman filtering）是一种利用线性系统状态方程，通过系统输入输出观测数据，对系统状态进行最优估计的算法。由于观测数据">
+<meta property="og:description" content="FWCW雷达FMCW 雷达与脉冲雷达的不同之处在于 FMCW 雷达的电磁信号是连续传输该信号的频率随时间变化，并且通常在设定的带宽上扫描。发射和接收（反射）信号之间的频率差由这两个信号同时确定并产生一个新的信号，通过测量该信号可以确定目标的距离或速度。   在多个物体检测时，距离维FFT如下图：   检测物体速度时，发出两组线性调频脉冲，由于间隔时间极短，因此频率几乎相同，但相位不同：  由于这种">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://xdljl.club/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%871.png">
+<meta property="og:image" content="http://xdljl.club/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%872.png">
+<meta property="og:image" content="http://xdljl.club/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%873.png">
+<meta property="og:image" content="http://xdljl.club/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%874.png">
+<meta property="og:image" content="http://xdljl.club/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%875.png">
 <meta property="article:published_time" content="2022-03-21T09:23:07.000Z">
-<meta property="article:modified_time" content="2022-09-06T04:18:35.307Z">
+<meta property="article:modified_time" content="2022-09-06T08:55:07.607Z">
 <meta property="article:author" content="Jialin Liu">
 <meta property="article:tag" content="雷达">
 <meta name="twitter:card" content="summary">
@@ -234,7 +238,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-09-06 12:18:35" itemprop="dateModified" datetime="2022-09-06T12:18:35+08:00">2022-09-06</time>
+                <time title="修改时间：2022-09-06 16:55:07" itemprop="dateModified" datetime="2022-09-06T16:55:07+08:00">2022-09-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -273,7 +277,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>379</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -294,6 +298,17 @@
       
         <h1 id="FWCW雷达"><a href="#FWCW雷达" class="headerlink" title="FWCW雷达"></a>FWCW雷达</h1><p>FMCW 雷达与脉冲雷达的不同之处在于 FMCW 雷达的电磁信号是连续传输该信号的频率随时间变化，并且通常在设定的带宽上扫描。发射和接收（反射）信号之间的频率差由这两个信号同时确定并产生一个新的信号，通过测量该信号可以确定目标的距离或速度。</p>
 <p><img src="/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%871.png" alt="芯片类型"> </p>
+<p>在多个物体检测时，距离维FFT如下图：</p>
+<p><img src="/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%872.png" alt="芯片类型"> </p>
+<p>检测物体速度时，发出两组线性调频脉冲，由于间隔时间极短，因此频率几乎相同，但相位不同：<br><img src="/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%873.png" alt="芯片类型"> </p>
+<p>由于这种速度测量方法基于相位差，因此会存在速度模糊性。当两个IF信号的相位差超出主值区间时，将无法确定其真实的相位差，进而无法得到物体真实的速度。</p>
+<p>下面讨论位于同一距离处的多个物体速度测量。 此时，由于这些物体距离雷达<br>的距离相同，因此在两个线性调频脉冲的情况下，距离维 FFT 仍产生单个峰值，<br>并且是所有这些距离相同物体回波信号的叠加，此时不能分离出不同物体各自的<br>IF 信号对应的相位差，因此并不能得到各物体的速度。</p>
+<p>此时，为了测量速度， FMCW 雷达系统必须发射多个间隔为TC 的线性调频脉<br>冲。图 2.8 展示了 FMCW 雷达发射的一组 N 个等间隔线性调频脉冲的频率时间关<br>系图像，这一组线性调频脉冲被称为一个线性调频脉冲帧。<br><img src="/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%874.png" alt="芯片类型"> </p>
+<p>由于物体运动速度不同，因此其在距离维 FFT 对应的相位的变化速度也不同，<br>在多个线性调频脉冲的 FFT 上体现为频率的不同，这是多普勒效应的一种体现。<br>因此， 在慢时间维度上，对这 N 个相量进行 FFT，不同速度的物体将出现不同位<br>置的峰值，这个过程称为多普勒 FFT 。</p>
+<p>FMCW 雷达系统可以估算回波信号的角度，该角度称为到达角（AoA），为了估算物体角度，雷达将使用至少两个接收天线。这些天线按一定间隔排列，在接收物体反射的回波信号时，不同天线距物体的距离将会有微小的差别，这将导致距离维 FFT 中峰值相位的差别。利用相位差即可估算到达角</p>
+<p>生命体征是一组关于个人健康状况和身体功能的医学参数，包括心率（HR）、<br>呼吸频率（BR）、体温（BT）、血压（BP）等。由于心跳和呼吸会引起人体胸腔<br>的波动， 通过 FMCW 雷达对人体胸腔运动的探测可以得到人体胸腔运动的轨迹。<br>将轨迹分别经过心跳滤波器和呼吸滤波器后，可以得到心跳波形及呼吸波形。最后<br>分别对这两个波形进行 FFT，最大峰值处对应的频率即为心跳和呼吸的频率。</p>
+<p>硬件设计框图：</p>
+<p><img src="/2022/03/21/FWCW%E9%9B%B7%E8%BE%BE/%E5%9B%BE%E7%89%875.png" alt="芯片类型"> </p>
 <p>卡尔曼滤波（Kalman filtering）是一种利用线性系统状态方程，通过系统输入输出观测数据，对系统状态进行最优估计的算法。由于观测数据中包括系统中的噪声和干扰的影响，所以最优估计也可看作是滤波过程。<br>数据滤波是去除噪声还原真实数据的一种数据处理技术，Kalman滤波在测量方差已知的情况下能够从一系列存在测量噪声的数据中，估计动态系统的状态。由于它便于计算机编程实现，并能够对现场采集的数据进行实时的更新和处理，Kalman滤波是目前应用最为广泛的滤波方法，在通信，导航，制导与控制等多领域得到了较好的应用。</p>
 
     </div>
@@ -313,13 +328,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/03/21/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" rel="prev" title="数学建模">
-      <i class="fa fa-chevron-left"></i> 数学建模
+    <a href="/2022/03/21/STM32%E5%85%A5%E9%97%A8/" rel="prev" title="STM32">
+      <i class="fa fa-chevron-left"></i> STM32
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/03/21/STM32%E5%85%A5%E9%97%A8/" rel="next" title="STM32">
-      STM32 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -466,7 +478,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">5k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
