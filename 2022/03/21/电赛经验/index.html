@@ -22,16 +22,16 @@
     var CONFIG = {"hostname":"xdljl.club","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="电赛经验dds避免漂移的方法：在输出端对地接一个大电阻。 运放选型运放：一般选小电阻配比例，减小输入偏置电流的影响和分布电容的影响。如果很计较功耗，则要在电阻数值方面折中。 精密应用时，应选用千欧姆级的电阻。 高速应用时，一般选择10欧或100欧级的电阻。">
+  <meta name="description" content="电赛经验dds避免漂移的方法：在输出端对地接一个大电阻。 运放选型运放：一般选小电阻配比例，减小输入偏置电流的影响和分布电容的影响。如果很计较功耗，则要在电阻数值方面折中。 精密应用时，应选用千欧姆级的电阻。 高速应用时，一般选择10欧或100欧级的电阻。 　1、同相放大器的输入阻抗和运放的输入阻抗相等，接近无穷大，同相放大器的输入电阻取值大小不影响输入阻抗；而反相放大器的输入阻抗等于信号到输入端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="电赛经验">
 <meta property="og:url" content="http://xdljl.club/2022/03/21/%E7%94%B5%E8%B5%9B%E7%BB%8F%E9%AA%8C/index.html">
 <meta property="og:site_name" content="Joy Boy的小屋">
-<meta property="og:description" content="电赛经验dds避免漂移的方法：在输出端对地接一个大电阻。 运放选型运放：一般选小电阻配比例，减小输入偏置电流的影响和分布电容的影响。如果很计较功耗，则要在电阻数值方面折中。 精密应用时，应选用千欧姆级的电阻。 高速应用时，一般选择10欧或100欧级的电阻。">
+<meta property="og:description" content="电赛经验dds避免漂移的方法：在输出端对地接一个大电阻。 运放选型运放：一般选小电阻配比例，减小输入偏置电流的影响和分布电容的影响。如果很计较功耗，则要在电阻数值方面折中。 精密应用时，应选用千欧姆级的电阻。 高速应用时，一般选择10欧或100欧级的电阻。 　1、同相放大器的输入阻抗和运放的输入阻抗相等，接近无穷大，同相放大器的输入电阻取值大小不影响输入阻抗；而反相放大器的输入阻抗等于信号到输入端">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://private.codecogs.com/gif.latex?100V/%5Cmu%20s">
 <meta property="article:published_time" content="2022-03-21T09:23:07.000Z">
-<meta property="article:modified_time" content="2022-09-05T14:33:02.780Z">
+<meta property="article:modified_time" content="2022-10-20T14:13:07.944Z">
 <meta property="article:author" content="Jialin Liu">
 <meta property="article:tag" content="电赛">
 <meta name="twitter:card" content="summary">
@@ -224,7 +224,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-09-05 22:33:02" itemprop="dateModified" datetime="2022-09-05T22:33:02+08:00">2022-09-05</time>
+                <time title="修改时间：2022-10-20 22:13:07" itemprop="dateModified" datetime="2022-10-20T22:13:07+08:00">2022-10-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -286,8 +286,6 @@
 <h3 id="运放选型"><a href="#运放选型" class="headerlink" title="运放选型"></a>运放选型</h3><p>运放：一般选小电阻配比例，减小输入偏置电流的影响和分布电容的影响。如果很计较功耗，则要在电阻数值方面折中。</p>
 <p>精密应用时，应选用千欧姆级的电阻。</p>
 <p><strong>高速应用时，一般选择10欧或100欧级的电阻</strong>。</p>
-<span id="more"></span>
-
 <p>　1、同相放大器的输入阻抗和运放的输入阻抗相等，接近无穷大，同相放大器的输入电阻取值大小不影响输入阻抗；而反相放大器的输入阻抗等于信号到输入端的串联电阻的阻值。因此当要求输入阻抗很高的时候就应选择同相放大器！</p>
 <p>　2、同相放大器的输入信号范围受运放的共模输入电压范围的限制，反相放大器则无此限制。因此如果要求输入阻抗不高且相位无要求时，首选反相放大，因为反相放大只存在差模信号，抗干扰能力强，可以得到更大的输入信号范围。</p>
 <p>也就是说同相放大器自带阻抗匹配，反相抗干扰更强。</p>
@@ -320,7 +318,7 @@
 </ol>
 <p>5.为了消除内阻引起的寄生振荡，可在运放电源端对地就近接去耦电容，考虑到去耦电解电容的电感效应，常常在其二端并联一个容量为0.01uf~0.1uf的瓷片电容。</p>
 <h2 id="消除自激振荡的方法："><a href="#消除自激振荡的方法：" class="headerlink" title="消除自激振荡的方法："></a>消除自激振荡的方法：</h2><p>目测或者审查电路，观察是否有明显的违规现象。<br>尝试更换运算放大器。比如使用驱动电容能力较强的运放。<br>如断掉负载，自激振荡消失，可考虑在负载和运放输出之间串联一个小电阻，先从 100 欧姆试起，如振荡消失，一次改为 22欧姆。最终找到合适的隔离电阻。<br>在反馈电阻中并联一个小电容，是消振最为常见的做法。<br>重新设计电路板，将杂散电容大幅度降低。<br>尝试其他补偿方法，比如教科书中介绍的超前补偿、滞后补偿等等，都是在外部增加电容，强制改变闭环传函的零极点位置，以消除自激振荡的条件。一般情况下， 用前述 5 条即可解决问题。</p>
-<h2 id="改变阻抗力的方法："><a href="#改变阻抗力的方法：" class="headerlink" title="改变阻抗力的方法："></a><strong>改变阻抗力的方法：</strong></h2><p>　<br>  使用变压器来做阻抗转换。<br>  使用串联/并联电容或电感的办法，这在调试射频电路时常使用。<br>使用串联/并联电阻的办法。</p>
+<h2 id="改变阻抗力的方法："><a href="#改变阻抗力的方法：" class="headerlink" title="改变阻抗力的方法："></a><strong>改变阻抗力的方法：</strong></h2><p>  使用变压器来做阻抗转换。<br>  使用串联/并联电容或电感的办法，这在调试射频电路时常使用。<br>使用串联/并联电阻的办法。</p>
 
     </div>
 
