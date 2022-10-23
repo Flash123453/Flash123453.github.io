@@ -31,7 +31,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://private.codecogs.com/gif.latex?100V/%5Cmu%20s">
 <meta property="article:published_time" content="2022-03-21T09:23:07.000Z">
-<meta property="article:modified_time" content="2022-10-20T14:13:07.944Z">
+<meta property="article:modified_time" content="2022-10-23T14:41:47.995Z">
 <meta property="article:author" content="Jialin Liu">
 <meta property="article:tag" content="电赛">
 <meta name="twitter:card" content="summary">
@@ -228,7 +228,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-10-20 22:13:07" itemprop="dateModified" datetime="2022-10-20T22:13:07+08:00">2022-10-20</time>
+                <time title="修改时间：2022-10-23 22:41:47" itemprop="dateModified" datetime="2022-10-23T22:41:47+08:00">2022-10-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -322,8 +322,8 @@
 </ol>
 <p>5.为了消除内阻引起的寄生振荡，可在运放电源端对地就近接去耦电容，考虑到去耦电解电容的电感效应，常常在其二端并联一个容量为0.01uf~0.1uf的瓷片电容。</p>
 <h2 id="消除自激振荡的方法："><a href="#消除自激振荡的方法：" class="headerlink" title="消除自激振荡的方法："></a>消除自激振荡的方法：</h2><p>目测或者审查电路，观察是否有明显的违规现象。<br>尝试更换运算放大器。比如使用驱动电容能力较强的运放。<br>如断掉负载，自激振荡消失，可考虑在负载和运放输出之间串联一个小电阻，先从 100 欧姆试起，如振荡消失，一次改为 22欧姆。最终找到合适的隔离电阻。<br>在反馈电阻中并联一个小电容，是消振最为常见的做法。<br>重新设计电路板，将杂散电容大幅度降低。<br>尝试其他补偿方法，比如教科书中介绍的超前补偿、滞后补偿等等，都是在外部增加电容，强制改变闭环传函的零极点位置，以消除自激振荡的条件。一般情况下， 用前述 5 条即可解决问题。</p>
-<h2 id="改变阻抗力的方法："><a href="#改变阻抗力的方法：" class="headerlink" title="改变阻抗力的方法："></a><strong>改变阻抗力的方法：</strong></h2><p>  使用变压器来做阻抗转换。<br>  使用串联/并联电容或电感的办法，这在调试射频电路时常使用。<br>使用串联/并联电阻的办法。</p>
-
+<h2 id="改变阻抗力的方法："><a href="#改变阻抗力的方法：" class="headerlink" title="改变阻抗力的方法："></a><strong>改变阻抗力的方法：</strong></h2><h2 id="使用变压器来做阻抗转换。"><a href="#使用变压器来做阻抗转换。" class="headerlink" title="使用变压器来做阻抗转换。"></a>使用变压器来做阻抗转换。</h2><p>使用串联/并联电容或电感的办法，这在调试射频电路时常使用。<br>使用串联/并联电阻的办法。</p>
+<h2 id><a href="#" class="headerlink" title></a></h2>
     </div>
 
     
@@ -340,13 +340,10 @@
 
         
     <div class="post-nav">
+      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2022/03/21/STM32%E5%85%A5%E9%97%A8/" rel="prev" title="STM32">
-      <i class="fa fa-chevron-left"></i> STM32
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/09/21/FMCW%E9%9B%B7%E8%BE%BE/" rel="next" title="雷达基础">
-      雷达基础 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/03/21/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" rel="next" title="数学建模">
+      数学建模 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -409,7 +406,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E8%B5%9B%E7%BB%8F%E9%AA%8C"><span class="nav-number">1.</span> <span class="nav-text">电赛经验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E6%94%BE%E9%80%89%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">运放选型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E6%94%BE%E9%9C%87%E8%8D%A1%E5%8E%9F%E5%9B%A0%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">运放震荡原因：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B6%88%E9%99%A4%E8%87%AA%E6%BF%80%E6%8C%AF%E8%8D%A1%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">消除自激振荡的方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E5%8F%98%E9%98%BB%E6%8A%97%E5%8A%9B%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">改变阻抗力的方法：</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E8%B5%9B%E7%BB%8F%E9%AA%8C"><span class="nav-number">1.</span> <span class="nav-text">电赛经验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E6%94%BE%E9%80%89%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">运放选型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E6%94%BE%E9%9C%87%E8%8D%A1%E5%8E%9F%E5%9B%A0%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">运放震荡原因：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B6%88%E9%99%A4%E8%87%AA%E6%BF%80%E6%8C%AF%E8%8D%A1%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">消除自激振荡的方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E5%8F%98%E9%98%BB%E6%8A%97%E5%8A%9B%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">改变阻抗力的方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%8F%98%E5%8E%8B%E5%99%A8%E6%9D%A5%E5%81%9A%E9%98%BB%E6%8A%97%E8%BD%AC%E6%8D%A2%E3%80%82"><span class="nav-number">5.</span> <span class="nav-text">使用变压器来做阻抗转换。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">6.</span> <span class="nav-text"></span></a></li></ol></div>
         
     
       </div>
