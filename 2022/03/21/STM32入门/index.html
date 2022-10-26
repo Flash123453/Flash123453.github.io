@@ -22,16 +22,16 @@
     var CONFIG = {"hostname":"xdljl.club","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="STM32入门 STM32系列专为要求高性能、低成本、低功耗的嵌入式应用设计的ARM Cortex®-M0，M0+，M3, M4和M7内核，按内核架构分为不同产品：主流产品（STM32F0、STM32F1、STM32F3）、超低功耗产品（STM32L0、STM32L1、STM32L4、STM32L4+）、高性能产品（STM32F2、STM32F4、STM32F7、STM32H7）。 命名规则：">
+  <meta name="description" content="STM32入门STM32系列专为要求高性能、低成本、低功耗的嵌入式应用设计的ARM Cortex®-M0，M0+，M3, M4和M7内核，按内核架构分为不同产品：主流产品（STM32F0、STM32F1、STM32F3）、超低功耗产品（STM32L0、STM32L1、STM32L4、STM32L4+）、高性能产品（STM32F2、STM32F4、STM32F7、STM32H7）。 命名规则： ST">
 <meta property="og:type" content="article">
 <meta property="og:title" content="STM32">
 <meta property="og:url" content="http://xdljl.club/2022/03/21/STM32%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="Joy Boy的小屋">
-<meta property="og:description" content="STM32入门 STM32系列专为要求高性能、低成本、低功耗的嵌入式应用设计的ARM Cortex®-M0，M0+，M3, M4和M7内核，按内核架构分为不同产品：主流产品（STM32F0、STM32F1、STM32F3）、超低功耗产品（STM32L0、STM32L1、STM32L4、STM32L4+）、高性能产品（STM32F2、STM32F4、STM32F7、STM32H7）。 命名规则：">
+<meta property="og:description" content="STM32入门STM32系列专为要求高性能、低成本、低功耗的嵌入式应用设计的ARM Cortex®-M0，M0+，M3, M4和M7内核，按内核架构分为不同产品：主流产品（STM32F0、STM32F1、STM32F3）、超低功耗产品（STM32L0、STM32L1、STM32L4、STM32L4+）、高性能产品（STM32F2、STM32F4、STM32F7、STM32H7）。 命名规则： ST">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://xdljl.club/2022/03/21/STM32%E5%85%A5%E9%97%A8/stm32.jpg">
-<meta property="og:image" content="http://xdljl.club/2022/03/21/STM32%E5%85%A5%E9%97%A8/51%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F.jpg">
-<meta property="og:image" content="http://xdljl.club/2022/03/21/STM32%E5%85%A5%E9%97%A8/32%E7%B3%BB%E7%BB%9F.jpg">
+<meta property="og:image" content="http://xdljl.club/2022/03/21/STM32%E5%85%A5%E9%97%A8/51最小系统.jpg">
+<meta property="og:image" content="http://xdljl.club/2022/03/21/STM32%E5%85%A5%E9%97%A8/32系统.jpg">
 <meta property="article:published_time" content="2022-03-21T09:23:07.000Z">
 <meta property="article:modified_time" content="2022-10-24T02:55:43.408Z">
 <meta property="article:author" content="Jialin Liu">
@@ -284,28 +284,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="stm32入门"><a class="markdownIt-Anchor" href="#stm32入门"></a> STM32入门</h1>
-<p>STM32系列专为要求高性能、低成本、低功耗的嵌入式应用设计的ARM Cortex®-M0，M0+，M3, M4和M7内核，按内核架构分为不同产品：主流产品（STM32F0、STM32F1、STM32F3）、超低功耗产品（STM32L0、STM32L1、STM32L4、STM32L4+）、高性能产品（STM32F2、STM32F4、STM32F7、STM32H7）。</p>
-<p>命名规则： STM32型号的说明：以STM32F103RBT6这个型号的芯片为例，该型号的组成为7个部分，其命名规则如下：<br>
-<img src="/2022/03/21/STM32%E5%85%A5%E9%97%A8/stm32.jpg" alt="芯片类型"></p>
-<h2 id="单片机的最小系统"><a class="markdownIt-Anchor" href="#单片机的最小系统"></a> 单片机的最小系统</h2>
-<p>这里以51单片机为例：那就是单片机、电源电路、时钟电路以及复位电路。<br>
-<img src="/2022/03/21/STM32%E5%85%A5%E9%97%A8/51%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F.jpg" alt="51"></p>
+        <h1 id="STM32入门"><a href="#STM32入门" class="headerlink" title="STM32入门"></a>STM32入门</h1><p>STM32系列专为要求高性能、低成本、低功耗的嵌入式应用设计的ARM Cortex®-M0，M0+，M3, M4和M7内核，按内核架构分为不同产品：主流产品（STM32F0、STM32F1、STM32F3）、超低功耗产品（STM32L0、STM32L1、STM32L4、STM32L4+）、高性能产品（STM32F2、STM32F4、STM32F7、STM32H7）。</p>
+<p>命名规则： STM32型号的说明：以STM32F103RBT6这个型号的芯片为例，该型号的组成为7个部分，其命名规则如下：<br><img src="/2022/03/21/STM32%E5%85%A5%E9%97%A8/stm32.jpg" alt="芯片类型"> </p>
+<h2 id="单片机的最小系统"><a href="#单片机的最小系统" class="headerlink" title="单片机的最小系统"></a>单片机的最小系统</h2><p>这里以51单片机为例：那就是单片机、电源电路、时钟电路以及复位电路。<br><img src="/2022/03/21/STM32%E5%85%A5%E9%97%A8/51最小系统.jpg" alt="51"> </p>
 <p>单片机是一种集成电路芯片。它采用超大规模技术将具有数据处理能力的微处理器（CPU）、存储器（含程序存储器ROM和数据存储器RAM）、输入、输出接口电路（I/O接口）集成在同一块芯片上，构成一个即小巧又很完善的计算机硬件系统，在单片机程序的控制下能准确、迅速、高效地完成程序设计者事先规定的任务。所以说，一片单片机芯片就具有了组成计算机的全部功能。</p>
 <span id="more"></span>
 <p>复位电路：由电容串联电阻构成，由图并结合“电容电压不能突变”的性质，可以知道，当系统一上电，RST脚将会出现高电平，并且，这个高电平持续的时间由电路的RC值来决定。典型的51单片机当RST脚的高电平持续两个机器周期以上就将复位，所以，适当组合RC的取值就可以保证可靠的复位。</p>
 <p>时钟电路：单片机外部接上振荡器（也可以是内部振荡器）提供高频脉冲经过分频处理后，成为单片机内部时钟信号，作为片内各部件协调工作的控制信号。作用是来配合外部晶体实现振荡的电路，这样可以为单片机提供运行时钟。以MCS一5l单片机为例随明：MCS一51单片机为12个时钟周期执行一条指令。也就是说单片机运行一条指令，必须要用12个时钟周期。没有这个时钟，单片机就跑不起来了，也没有办法定时和进行和时间有关的操作。 时钟电路是微型计算机的心脏，它控制着计算机的二个节奏。CPU就是通过复杂的时序电路完成不同的指令功能的。</p>
 <p>电源电路：用于给单片机供电，一个稳定的电源是单片机正常工作的前提，因此，单片机附近经常会有电容用于滤波。</p>
-<p>stm32最小系统如下：<br>
-<img src="/2022/03/21/STM32%E5%85%A5%E9%97%A8/32%E7%B3%BB%E7%BB%9F.jpg" alt="51"></p>
+<p>stm32最小系统如下：<br><img src="/2022/03/21/STM32%E5%85%A5%E9%97%A8/32系统.jpg" alt="51"> </p>
 <p>STM32单片机的成功，和ST的软件生态也是有很大关系的。 早期的STM32编程主要以库函数（标准固件库）和寄存器两种方式进行的。库函数编程比较方便，调用ST官方提供的函数，即可完成相应功能，效率也还可以接受。寄存器方式则是直接操作STM32的相应寄存器的数据，效率极高，但是难度也很大，编程时需要查阅芯片参考手册，多用于嵌入式老手。但随着单片机性能的不断提升，对于效率又不太看重，所以，很多人基本就是选择库函数了。</p>
 <p>后来，ST为了降低编程的门槛，推出了HAL库，Hardware Abstraction Layer（硬件抽象层），说白了就是减少硬件细节，提高移植性，降低编程门槛。又配合STM32CUBEMX软件，直接就可以初始化一个工程。大大降低编程难度，本次教程就是介绍 ：HAL库配合CUBEMX配置一些常用外设的初始化，直观感受STM32编程，用最短时间入门STM32。</p>
 <p>硬件抽象层 ： 是位于操作系统 内核与硬件电路之间的接口层，其目的在于将硬件抽象化。它隐藏了特定平台的硬件接口细节,为操作系统提供虚拟硬件平台,使其具有硬件无关性,可在多种平台上进行移植。 从软硬件测试的角度来看，软硬件的测试工作都可分别基于硬件抽象层来完成，使得软硬件测试工作的并行进行成为可能。</p>
-<p>必备软件：<br>
-STM32CUBEMX（配置stm32初始化工程）<br>
-MDK Keil（编程、调试软件）<br>
-串口调试助手（调试软件）<br>
-驱动软件：Jlink 、STlink 驱动（调试器） ； CH340驱动（串口通信）</p>
+<p>必备软件：<br>STM32CUBEMX（配置stm32初始化工程）<br>MDK Keil（编程、调试软件）<br>串口调试助手（调试软件）<br>驱动软件：Jlink 、STlink 驱动（调试器） ； CH340驱动（串口通信）</p>
 
     </div>
 
@@ -324,12 +315,12 @@ MDK Keil（编程、调试软件）<br>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/03/21/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" rel="prev" title="数学建模">
-      <i class="fa fa-chevron-left"></i> 数学建模
+    <a href="/2022/03/21/%E7%94%B5%E8%B5%9B%E7%BB%8F%E9%AA%8C/" rel="prev" title="电赛经验">
+      <i class="fa fa-chevron-left"></i> 电赛经验
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/10/16/%E9%9B%B7%E8%BE%BE%E5%8E%9F%E7%90%86/" rel="next" title="雷达原理">
-      雷达原理 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/03/21/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" rel="next" title="数学建模">
+      数学建模 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -392,7 +383,7 @@ MDK Keil（编程、调试软件）<br>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#stm32%E5%85%A5%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text"> STM32入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.</span> <span class="nav-text"> 单片机的最小系统</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#STM32%E5%85%A5%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text">STM32入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.</span> <span class="nav-text">单片机的最小系统</span></a></li></ol></li></ol></div>
         
     
       </div>
